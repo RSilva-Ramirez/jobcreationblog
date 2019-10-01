@@ -21,8 +21,10 @@ nocite: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 # hidden dependency
-source("global-config.R",echo=FALSE)
+source("global-config.R",echo=FALSE) # global libraries used everywhere 
+# install.packages(c("ggplot2", "ggthemes", "knitcitations", "knitr"))
 ```
+
 ```{r setup2, echo=FALSE, message=FALSE, warning=FALSE}
 library(knitcitations)
 record_as_cited(citation("rmarkdown"))
